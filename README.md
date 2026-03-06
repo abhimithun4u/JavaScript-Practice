@@ -1,4 +1,4 @@
-# JavaScript Learning
+# JavaScript Practice
 
 This repository contains my JavaScript practice programs.
 
