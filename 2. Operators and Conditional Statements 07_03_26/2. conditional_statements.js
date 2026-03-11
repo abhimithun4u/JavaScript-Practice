@@ -1,2 +1,1 @@
-// we put // for single line comment
-// we put /* multiline comment here */ for multiline comment
+//conditional statements are [ if, else if, else]
