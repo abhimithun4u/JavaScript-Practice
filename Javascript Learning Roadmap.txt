@@ -1,0 +1,125 @@
+Phase 1 — JavaScript Basics (Foundation)
+
+এইগুলো অবশ্যই clear থাকতে হবে।
+
+Topics
+
+Variables (let, const) - done
+
+Data Types -done
+
+Operators -done
+
+String methods -done
+
+if / else -done
+
+switch -done
+
+Loops
+
+Example:
+
+for(let i=1; i<=5; i++){
+  console.log(i);
+}
+Target
+
+Basic logic লিখতে পারা।
+
+
+
+Phase 2 — Important JavaScript Concepts
+
+এগুলো automation script লিখতে খুব কাজে লাগে।
+
+Topics
+
+Functions
+
+function add(a,b){
+ return a + b;
+}
+
+console.log(add(5,3));
+
+Arrays
+
+Objects
+
+Array methods (map, filter)
+
+Template literals
+
+Example:
+
+let user = {
+ name: "Abhishek",
+ age: 44
+};
+
+console.log(user.name);
+
+
+
+
+Phase 3 — Asynchronous JavaScript
+
+Playwright ও API testing এ খুব important।
+
+Topics
+
+Callbacks
+
+Promises
+
+async / await
+
+Fetch API
+
+Example:
+
+async function getData(){
+ let response = await fetch("https://api.github.com/users");
+ let data = await response.json();
+ console.log(data);
+}
+
+getData();
+Phase 4 — Automation Ready Skills
+
+এই stage এ গেলে Playwright শুরু করা safe।
+
+Topics
+
+DOM basics
+
+Event handling
+
+JSON handling
+
+API response handling
+
+Example:
+
+let data = {
+ name: "Abhishek",
+ role: "QA"
+};
+
+console.log(data.role);
+Then Start Playwright
+
+Playwright এ তুমি শিখবে:
+
+test('Open website', async ({ page }) => {
+  await page.goto('https://example.com');
+});
+Realistic Timeline (Family pressure consider করে)
+
+তোমার situation অনুযায়ী:
+
+JavaScript basics → 3 weeks
+Intermediate JS → 3 weeks
+Async JS → 2 weeks
+Playwright start → after 2 months

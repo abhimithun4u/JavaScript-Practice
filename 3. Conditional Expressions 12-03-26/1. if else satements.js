@@ -1,3 +1,4 @@
+
 let age = prompt("Please Enter Your Age:- ");
 age= Number.parseInt(age);
 console.log(age);
