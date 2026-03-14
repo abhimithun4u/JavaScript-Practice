@@ -11,6 +11,11 @@ let result = marks>=35 ? "Pass": "Fail";
 console.log(result) */
 
 // Program to find Odd and Even Number using ternary operators
-let num =4;
+/* let num =4;
 let result =num%2==0 ? "Even" : "Odd";
-console.log(result);
+console.log(result); */
+
+// Program using ternary operator to check whether a person is adult
+let age =19;
+let status =age>18 ? "Adult" : "Minor";
+console.log(status);
