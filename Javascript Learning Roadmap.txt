@@ -1,124 +1,32 @@
-Phase 1 — JavaScript Basics (Foundation)
+Watch:
 
-এইগুলো অবশ্যই clear থাকতে হবে।
+#1 → Intro -done
+#2 → Variables -done
+#3 → Data Types -done
+#4 → Objects -done
+#6 → Operators -done
+#7 → Conditionals -done
+#8 → Loops -done
+#9 → Functions 🔥-done
+#10 → Strings -done
+#11–15 → Arrays (VERY IMPORTANT) -done
+#16 → Array Methods (🔥 must — map, filter etc.) -done
+👉 Ei part ta Playwright er Jonno critical
+#25 → Functions Deep
+#26 → Arrow Functions -done
+#27 → forEach / map / filter /reduce -done
+Callback
+Promise
+async/await ⚡
+try/catch (error handling) 
 
-Topics
-
-Variables (let, const) - done
-
-Data Types -done
-
-Operators -done
-
-String methods -done
-
-if / else -done
-
-switch -done
-
-Loops
-
-Example:
-
-for(let i=1; i<=5; i++){
-  console.log(i);
-}
-Target
-
-Basic logic লিখতে পারা।
+Fetch API (basic idea)
+Error handling extra
+HTTP requests basics
+Playwright = async/await Chara impossible practically
 
 
-
-Phase 2 — Important JavaScript Concepts
-
-এগুলো automation script লিখতে খুব কাজে লাগে।
-
-Topics
-
-Functions
-
-function add(a,b){
- return a + b;
-}
-
-console.log(add(5,3));
-
-Arrays
-
-Objects
-
-Array methods (map, filter)
-
-Template literals
-
-Example:
-
-let user = {
- name: "Abhishek",
- age: 44
-};
-
-console.log(user.name);
-
-
-
-
-Phase 3 — Asynchronous JavaScript
-
-Playwright ও API testing এ খুব important।
-
-Topics
-
-Callbacks
-
-Promises
-
-async / await
-
-Fetch API
-
-Example:
-
-async function getData(){
- let response = await fetch("https://api.github.com/users");
- let data = await response.json();
- console.log(data);
-}
-
-getData();
-Phase 4 — Automation Ready Skills
-
-এই stage এ গেলে Playwright শুরু করা safe।
-
-Topics
-
-DOM basics
-
-Event handling
-
-JSON handling
-
-API response handling
-
-Example:
-
-let data = {
- name: "Abhishek",
- role: "QA"
-};
-
-console.log(data.role);
-Then Start Playwright
-
-Playwright এ তুমি শিখবে:
-
-test('Open website', async ({ page }) => {
-  await page.goto('https://example.com');
-});
-Realistic Timeline (Family pressure consider করে)
-
-তোমার situation অনুযায়ী:
-
+#32 → ES6 features (let, const, spread etc.)
 JavaScript basics → 3 weeks
 Intermediate JS → 3 weeks
 Async JS → 2 weeks
