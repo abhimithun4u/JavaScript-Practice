@@ -15,7 +15,7 @@ Watch:
 #25 → Functions Deep
 #26 → Arrow Functions -done
 #27 → forEach / map / filter /reduce -done
-Callback
+Callback -done
 Promise
 async/await ⚡
 try/catch (error handling) 

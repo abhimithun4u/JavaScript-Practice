@@ -79,7 +79,7 @@ executeAction(login);
 executeAction(fetchData);
 executeAction(logout); */
 
-//Program using callback to execute ecommerce flow
+/* //Program using callback to execute ecommerce flow
 function createUser(name,email,callback){
     console.log(`User Created ! ${name},${email}`)
     callback(name,email);
@@ -104,4 +104,180 @@ createUser("Abhishek", "abhi@gmail.com", (user) => {
       sendConfirmation(user);
     });
   });
-});
+}); */
+
+/* // Basic callback function
+function greet(callback){
+    console.log("Hello");
+    callback();
+    }
+function clbck(){
+    console.log("Callback Executed");
+    }
+    greet(clbck);
+ */
+/* function process(callback){
+    console.log("Start");
+    setTimeout(callback, 2000); 
+}
+function status(){
+    console.log("Done");
+}
+process(status); */
+
+/* const calculate=(a,b,callback)=>{
+    let result=callback(a,b);
+    console.log("The Sum Is:- "+result);
+};
+function sum(a,b){
+    return a+b;
+}
+calculate(7,6,sum); */
+/* 
+function login(username, password, success, error) {
+    if (username === "admin" && password === "1234") {
+        success();
+    } else {
+        error();
+    }
+}
+
+function onSuccess() {
+    console.log("Login successful");
+}
+
+function onError() {
+    console.log("Invalid credentials");
+}
+
+login("admin", "1234", onSuccess, onError); */
+
+/* function greet(callback,name){
+    console.log("Good Morning "+name);
+    return callback(name);
+}
+function achievement(n){
+    console.log(n+" has understood Callback and Promise");
+}
+greet(achievement,"Abhishek"); */
+
+/* //program to calculate fron one callback call
+let operations = [sum, sub, mul, div];
+
+function calculateAll(a, b, operations) {
+  operations.forEach((op) => {
+    console.log(`${op.name} of two numbers is- : ${op(a, b)}`);
+  });
+}
+
+calculateAll(11, 4, operations);
+
+
+function sum(num1,num2){
+    total=num1+num2;
+    return total;
+}
+
+function sub(num1,num2){
+    total=num1-num2;
+    return total;
+}
+
+function mul(num1,num2){
+    total=num1*num2;
+    return total;
+}
+
+function div(num1,num2){
+    total=num1/num2;
+    return total;
+} */
+/* 
+// function to print start, processing and program executed successfully in nested callback
+function login(callback){
+    console.log("Login Successful!");
+    callback();
+}
+function openDashboard(callback){
+    console.log("Dashboard Opened");
+    callback();
+}
+function dataFetched(callback){
+    console.log("Data fetched successfully!");
+    callback();
+}
+function logout(){
+    console.log("User Logged Out");
+}
+
+login(()=>{
+    openDashboard(()=>{
+        dataFetched(()=>{
+            logout();
+        })
+    })
+})
+ */
+
+/* // program to use nested callback or pyramid of hell
+function startApp(callback){
+    console.log("App started");
+    callback();
+}
+function login(callback){
+    console.log("Login done");
+    callback();
+}
+function fetchProfile(callback){
+    console.log("Profile Fetched");
+    callback();
+}
+function fetchOrders(callback){
+    console.log("Order Fetched");
+    callback();
+}
+function logout(callback){
+    console.log("Logged out")
+}
+
+startApp(()=>{
+    login(()=>{
+        fetchProfile(()=>{
+            fetchOrders(()=>{
+                logout();
+            })
+        })
+    })
+}) */
+
+// callback function to check login 
+/* function login(username,password,success,error){
+    if(username==="Abhishek" && password==="12345"){
+        success(username);
+    }
+    else{
+        error();
+    }
+}
+function success(user){
+    console.log("Welcome "+user);
+}
+function error(){
+    console.log("Login failed! Try again")
+}
+
+login("Abhishek","12345",success,error); */
+
+// Anonymous callback function example
+function login(username,password,success,error){
+    if(username==="Abhishek" && password==="12345"){
+        success(username);
+    }
+    else{
+        error();
+    }
+}
+login("Abhishek","12345",
+    ()=>{console.log("Login Successful")},
+    ()=>{console.log("Login Failed")}
+)

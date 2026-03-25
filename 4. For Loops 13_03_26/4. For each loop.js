@@ -36,7 +36,7 @@ orders.forEach((elements)=>{
  */
 // Using forEach loops find students who pass and find total
 //  marks of all students from array of objects
-let students = [
+/* let students = [
   { name: "Rahul", marks: 80 },
   { name: "Amit", marks: 45 },
   { name: "Saanvi", marks: 90 },
@@ -50,4 +50,10 @@ students.forEach((students)=>{
     }
     total+=students.marks;
 });
-console.log("Total Marks of all Students is:- "+total);
+console.log("Total Marks of all Students is:- "+total); */
+
+// basic for each loop
+let arr=["Abhishek","Saanvi","Riya","Gapu"];
+arr.forEach((elements)=>{
+    console.log(elements);
+})
