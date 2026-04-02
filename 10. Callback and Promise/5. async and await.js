@@ -24,7 +24,7 @@ async function login(){
 login(); */
 
 // Program to fetch a number using async and await
-function getNumber(){
+/* function getNumber(){
     return new Promise((resolve)=>{
         setTimeout(()=>resolve(15),2000);
     });
@@ -38,4 +38,39 @@ async function fetchNumber(){
         console.log(error);
     }
 }
-fetchNumber();
+fetchNumber(); */
+
+/* function getUser() {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve({ name: "Abhishek", age: 30 }), 1000);
+  });
+}
+
+async function fetchUser() {
+    try{
+        let result = await getUser()
+        console.log(`${result.name} is ${result.age} years old`);
+    }
+    catch(error){
+        console.log(error);
+    }
+}
+fetchUser(); */
+
+function loginUser(success) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      success ? resolve("Login Success") : reject("Login Failed");
+    }, 1000);
+  });
+}
+async function loginInfo(){
+    try{
+        let Info = await loginUser(false)
+        console.log(Info);
+    }
+    catch(error){
+        console.log(error);
+    }
+}
+loginInfo();
