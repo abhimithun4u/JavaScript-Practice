@@ -1,4 +1,4 @@
-//Basic promice understanding
+/* //Basic promice understanding
 let myPromise = new Promise((resolve,reject)=>{
     console.log("Promise is Pending!");
     let val = false;
@@ -18,7 +18,7 @@ myPromise
 })
 .catch((result)=>{
     console.log(result);
-})
+}) */
 
 
 /* function loginUser(username, password) {

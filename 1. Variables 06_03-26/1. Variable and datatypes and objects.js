@@ -1,5 +1,5 @@
 //Declaration of normal variables
-/* let fname ="Abhishek";
+let fname ="Abhishek";
 let age = 44;
 let city ="Kolkata";
 console.log("Hello " +fname);
@@ -16,22 +16,18 @@ console.log(x);
 console.log(typeof(x))
 // undefined variable declaration and showing its type
 let y;
-console.log(typeof(y)); */
+console.log(typeof(y));
 
 //practice set for availability of a product
-/* let product ="Phillips Air Frier";
+let product ="Phillips Air Frier";
 let price = 5500;
 let isAvailable = true;
-console.log(product +" is Available : " +isAvailable + " and its price is Rs "+price ); */
+console.log(product +" is Available : " +isAvailable + " and its price is Rs "+price );
 
 // practice set to update a variable
-/* 
+
 let score =50;
 console.log(score);
 score =85;
 console.log("The Updated Score is now "+score);
- */
-const name="Abhishek";
-const age =44;
-let isTester = true;
-console.log("My Name is "+ name+", age is "+age+" Tester: "+isTester);
+
